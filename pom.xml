@@ -12,7 +12,8 @@
     <modules>
         <module>SpringMVC-01-HelloWord</module>
         <module>SpringMVC-02-Rest</module>
-        <module>SpringMVC-03-Request</module>
+        <module>SpringMVC-03-RequestData</module>
+        <module>SpringMVC-04-OutputData</module>
     </modules>
 
     <dependencies>
