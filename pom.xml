@@ -12,9 +12,16 @@
     <modules>
         <module>SpringMVC-01-HelloWord</module>
         <module>SpringMVC-02-Rest</module>
+        <module>SpringMVC-03-Request</module>
     </modules>
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/commons-logging/commons-logging -->
         <dependency>
             <groupId>commons-logging</groupId>
