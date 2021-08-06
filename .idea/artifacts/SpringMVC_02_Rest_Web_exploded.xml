@@ -1,11 +1,11 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="SpringMVC-01-HelloWord:web exploded">
-    <output-path>$PROJECT_DIR$/out/artifacts/SpringMVC_01_HelloWord_web_exploded</output-path>
+  <artifact type="exploded-war" name="SpringMVC-02-Rest:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/SpringMVC_02_Rest_Web_exploded</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="SpringMVC-01-HelloWord/web/web" />
+      <element id="javaee-facet-resources" facet="SpringMVC-02-Rest/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="SpringMVC-01-HelloWord" />
+          <element id="module-output" name="SpringMVC-02-Rest" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
