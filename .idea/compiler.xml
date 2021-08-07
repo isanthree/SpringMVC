@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="SpringMVC-03-RequestData" />
         <module name="SpringMVC-01-HelloWord" />
+        <module name="SpringMVC-04-OutputData" />
         <module name="SpringMVC-02-Rest" />
       </profile>
     </annotationProcessing>
