@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+                    http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <!--扫描所有组件-->
+    <context:component-scan base-package="org.example"/>
+
+    <!--配置一个视图解析器，能帮我们拼接页面地址，简化方法的返回值-->
+<!--    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">-->
+<!--        <property name="prefix" value="/WEB-INF/pages/"/>-->
+<!--        <property name="suffix" value=".jsp"/>-->
+<!--    </bean>-->
+
+    <!--改动视图解析器-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/pages/"/>
+        <property name="suffix" value=".jsp"/>
+        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+    </bean>
+
+    <!--SpringMVC 管理国际化资源文件；配置一个资源文件管理器，id 必须叫 messageSource-->
+    <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+        <!--basename：指定基础名 i18n-->
+        <property name="basename" value="i18n"/>
+    </bean>
+
+    <!--发送一个请求（toLoginPage）：直接来到 web-inf 目录下的 login 页面
+    mvc 名称空间下有一个请求映射标签
+    path="/toLoginPage"：指定 toLoginPage 请求
+    view-name="login"：指定映射到 login-->
+    <mvc:view-controller path="/toLoginPage" view-name="login"/>
+    <!--配置上面这个请求映射标签，需要配置开启 mvc 注解驱动模式，否则注解映射将不可用-->
+    <mvc:annotation-driven/>
+
+</beans>
