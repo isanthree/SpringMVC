@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -10,6 +11,8 @@
         <module name="SpringMVC-01-HelloWord" />
         <module name="SpringMVC-04-OutputData" />
         <module name="SpringMVC-02-Rest" />
+        <module name="SpringMVC-05-ViewResolver" />
+        <module name="SpringMVC-06-Json" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
