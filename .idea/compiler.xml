@@ -13,6 +13,7 @@
         <module name="SpringMVC-02-Rest" />
         <module name="SpringMVC-05-ViewResolver" />
         <module name="SpringMVC-06-Json" />
+        <module name="SpringMVC-07-ajax" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

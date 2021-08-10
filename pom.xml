@@ -16,6 +16,7 @@
         <module>SpringMVC-04-OutputData</module>
         <module>SpringMVC-05-ViewResolver</module>
         <module>SpringMVC-06-Json</module>
+        <module>SpringMVC-07-ajax</module>
     </modules>
 
     <dependencies>
